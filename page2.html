@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Payment Details</title>
+  <link rel="stylesheet" href="./p .css/page2.css">
+  <style>
+    .b1page2{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+  <script>
+    function pay(){
+      alert("Transaction successful")
+    }
+  </script>
+</head>
+<body>
+  <div class="payment-container">
+    <form action="#" class="payment-form">
+      <h2>Payment Details</h2>
+      <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" name="card-number" placeholder="Enter card number" required>
+      </div>
+      <div class="form-group">
+        <label for="card-holder">Cardholder Name</label>
+        <input type="text" id="card-holder" name="card-holder" placeholder="Enter cardholder name" required>
+      </div>
+      <div class="form-group">
+        <label for="expiry-date">Expiry Date</label>
+        <input type="date" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" name="cvv" placeholder="********123" required>
+      </div>
+      <button style="width:90px"><a class="b1page2"   href="./home.html" onclick={pay()}>pay now</a></button>
+    </form>
+  </div>
+</body>
+</html>
